@@ -16,8 +16,8 @@ class Libro(Material):
         self.genero = genero
 
 class Revista(Material):
-    def __init__(self, idMaterial: int, titlo: str, añoPublicacion: int, edicion: int, periodicidad: str):
-        super().__init__(idMaterial, titlo, añoPublicacion)
+    def __init__(self, idMaterial: int, titulo: str, añoPublicacion: int, edicion: int, periodicidad: str):
+        super().__init__(idMaterial, titulo, añoPublicacion)
         self.edicion = edicion
         self.periodicidad = periodicidad
 
@@ -67,11 +67,11 @@ class Sucursal:
 
 #gestion prestamos
 class Prestamo:
-    def __init__(self, idPrestamo: int, fechaInicio: date, fechaDevolucion: Optional[date], usaurio: Usuario, material: Material):
+    def __init__(self, idPrestamo: int, fechaInicio: date, fechaDevolucion: Optional[date], usuario: Usuario, material: Material):
         self.idPrestamo = idPrestamo
         self.fechaInicio = fechaInicio
         self.fechaDevolucion = fechaDevolucion
-        self.usaurio = usaurio
+        self.usuario = usuario
         self.material = material
 
 class Penalizacion:
@@ -80,7 +80,7 @@ class Penalizacion:
         self.motivo = motivo
         self.pagada = pagada
 
-    def clacularMulta(self, dias_retraso: int):
+    def calcularMulta(self, dias_retraso: int):
         self.monto = dias_retraso * 1.5
         return self.monto
 

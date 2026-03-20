@@ -6,16 +6,16 @@ def ejecutar_pruebas():
 
     #10 LIBROS
     libros = [
-        Libro(101, "",0000,"","",""),
-        Libro(102, "",0000,"","",""),
-        Libro(103, "",0000,"","",""),
-        Libro(104, "",0000,"","",""),
-        Libro(105, "",0000,"","",""),
-        Libro(106, "",0000,"","",""),
-        Libro(107, "",0000,"","",""),
-        Libro(108, "",0000,"","",""),
-        Libro(109, "",0000,"","",""),
-        Libro(110, "",0000,"","",""),
+        Libro(101, "El principito",1943,"Antoine Saint-Exupéry","9780156013987","Fábula"),
+        Libro(102, "Bajo la misma estrella",2012,"Jhon Green","9780525478812","Juvenil"),
+        Libro(103, "Crepúsculo",2005,"Sthephanie Miller","9780525478812","Fantasía Romántica"),
+        Libro(104, "1984",1949,"George Orwell","9780525478812","Distopía"),
+        Libro(105, "Cien años de soledad",1998,"Gabriel García Márquez","9780525478812","Realismo mágico"),
+        Libro(106, "Don Quijote de la Mancha",1922,"Miguel de Cervantes","9780525478812","Clásico"),
+        Libro(107, "El amor en los tiempos del cólera",1985,"Gabriel García Márquez","9780525478812","Ficción"),
+        Libro(108, "Crónica de una muerte anunciada",1981,"Gabriel García Márquez","9780525478812","Novela"),
+        Libro(109, "El alquimista",1988,"Paulo Coelho","9780525478812","Fición"),
+        Libro(110, "El código da vinci",1999,"Dan Brown","9780525478812","Suspenso"),
     ]
     print("\n Libros registrados:")
     for i,j in enumerate(libros):
@@ -23,33 +23,33 @@ def ejecutar_pruebas():
 
     #10 REVISTAS
     revistas = [
-        Revista(201, "",0000,00,""),
-        Revista(202, "",0000,00,""),
-        Revista(203, "",0000,00,""),
-        Revista(204, "",0000,00,""),
-        Revista(205, "",0000,00,""),
-        Revista(206, "",0000,00,""),
-        Revista(207, "",0000,00,""),
-        Revista(208, "",0000,00,""),
-        Revista(209, "",0000,00,""),
-        Revista(210, "",0000,00,""),
+        Revista(201, "Muy interesante",1985,150,"Semanal"), 
+        Revista(202, "Forbes",2013,88,"Mensual"),
+        Revista(203, "Cosmopolitan",2013,88,"Mensual"),
+        Revista(204, "Quién",1999,44,"Mensual"),
+        Revista(205, "Expansión",1969,59,"Mensual"),
+        Revista(206, "El País",1984,74,"Mensual"),
+        Revista(207, "National Geographic",2018,94,"Semanal"),
+        Revista(208, "Vanidades",2001,19,"Semanal"),
+        Revista(209, "Proceso",2007,98,"Semanal"),
+        Revista(210, "TVNotas",2020,63,"Semanal"),
     ]
-    print("\n Libros registrados:")
-    for i,j in enumerate(libros):
+    print("\n Revistas registradas:")
+    for i,j in enumerate(revistas):
         print(f"Revista {i+1}: {j.titulo} ({j.añoPublicacion})|Edicion:{j.edicion} |Periodicidad:{j.periodicidad}")
     
     #10 MATERIALES DIGITALES
     materiales_digitales = [
-        MaterialDigital(301, "",0000,"","",0.0),
-        MaterialDigital(302, "",0000,"","",0.0),
-        MaterialDigital(303, "",0000,"","",0.0),
-        MaterialDigital(304, "",0000,"","",0.0),
-        MaterialDigital(305, "",0000,"","",0.0),
-        MaterialDigital(306, "",0000,"","",0.0),
-        MaterialDigital(307, "",0000,"","",0.0),
-        MaterialDigital(308, "",0000,"","",0.0),
-        MaterialDigital(309, "",0000,"","",0.0),
-        MaterialDigital(310, "",0000,"","",0.0),
+        MaterialDigital(301, "Python para principiantes",2004,"PDF","https://www.python.org/downloads/release/python-485/",5.1),
+        MaterialDigital(302, "Python avanzado",2010,"PDF","https://www.python.org/downloads/release/python-104/",7.1),
+        MaterialDigital(303, "Introducción a python",2007,"PDF","https://www.python.org/downloads/release/python-132/",4.1),
+        MaterialDigital(304, "Python para principiantes pt.2",2026,"PDF","https://www.python.org/downloads/release/python-942/",5.8),
+        MaterialDigital(305, "Python para seniors",2011,"PDF","https://www.python.org/downloads/release/python-872/",9.7),
+        MaterialDigital(306, "Cómo enseñarle python a mi bebé pt.1",2025,"PDF","https://www.python.org/downloads/release/python-178/",4.1),
+        MaterialDigital(307, "Puede mi gato conocer Python?",2020,"PDF","https://www.python.org/downloads/release/python-892/",1.0),
+        MaterialDigital(308, "Python vs Java",2012,"PDF","https://www.python.org/downloads/release/python-189/",2.1),
+        MaterialDigital(309, "Cómo enseñarle python a mi bebé pt.2",2017,"PDF","https://www.python.org/downloads/release/python-918/",4.1),
+        MaterialDigital(310, "Por qué tengo tantos libros de python?",2015,"PDF","https://www.python.org/downloads/release/python-981/",1.1),
     ]
     print("\n Materiales digitales registrados:")
     for i,j in enumerate(materiales_digitales):
@@ -57,16 +57,16 @@ def ejecutar_pruebas():
 
     #10 USUARIOS
     usuarios = [
-        Usuario(401, "Juan Perez", 3),
-        Usuario(402, "Maria Perez", 3),
-        Usuario(403, "Pedro Perez", 3),
-        Usuario(404, "Luis Perez", 3),
-        Usuario(405, "Carlos Perez", 3),
-        Usuario(406, "Manuel Perez", 3),
-        Usuario(407, "Juan Perez", 3),
-        Usuario(408, "Maria Perez", 3),
-        Usuario(409, "Pedro Perez", 3),
-        Usuario(410, "Luis Perez", 3),
+        Usuario(401, "Osvaldo Vázquez", 3),
+        Usuario(402, "Isaí Romero", 3),
+        Usuario(403, "Elizabeth Gutierrez", 3),
+        Usuario(404, "Amy Fuentes", 3),
+        Usuario(405, "Marco Serrano", 3),
+        Usuario(406, "Antonio Aviles", 3),
+        Usuario(407, "Yukari Rosas", 3),
+        Usuario(408, "Isaac Perez", 3),
+        Usuario(409, "Odalys Hernandez", 3),
+        Usuario(410, "Mary Sanchez", 3),
     ]
     print("\n Usuarios registrados:")
     for i,j in enumerate(usuarios):
@@ -100,7 +100,7 @@ def ejecutar_pruebas():
     #PRUEBA PENALIZACIONES
     print("\n>>>PENALIZACIONES")
     multa = Penalizacion(100, "Prueba de multa")
-    monto = multa.clacularMulta(7)
+    monto = multa.calcularMulta(7)
     print(f"Motivo: {multa.motivo} |Monto: ${monto}")
     multa.bloquearUsuario(usuario_test)
 
@@ -108,13 +108,13 @@ def ejecutar_pruebas():
     print("\n>>>RETOS")
     buscador = Catalogo([sede_norte, sede_centro, sede_sur])
 
-    print(f"BUSCANDO LIBROS DE 'Gabriel García Marquez'")
-    resultados = buscador.buscarPorAutor("Gabriel García Marquez")
+    print(f"BUSCANDO LIBROS DE 'Gabriel García Márquez'")
+    resultados = buscador.buscarPorAutor("Gabriel García Márquez")
     for r in resultados:
-        print(f"Encontrado {r.titulo} en {sede_norte.nombre}")
+        print(f"\n Encontrado {r.titulo} en {sede_norte.nombre}")
         print(f"Título: {r.titulo} |Autor: {r.autor} |Año: {r.añoPublicacion} |Genero: {r.genero} |ISBN: {r.isbn}")
 
-    print(f"BUSCANDO TÉRMINO 'Quijote' EN TODOS LOS SEDES")
+    print(f"\nBUSCANDO TÉRMINO 'Quijote' EN TODOS LOS SEDES")
     buscador.buscarEnTodasSucursales("Quijote")
 
 if __name__ == "__main__":
